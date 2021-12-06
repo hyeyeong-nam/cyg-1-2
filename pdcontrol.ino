@@ -1,5 +1,6 @@
 #include <Servo.h>
 
+#define PIN_LED 9
 #define PIN_SERVO 10
 #define PIN_IR A0
 
@@ -9,15 +10,15 @@
 
 #define _EMA_ALPHA 0.1 // EMA 필터 계산값
 
-#define _INTERVAL_DIST 5 // 거리 측정 주기
-#define _INTERVAL_SERVO 5 // 서보 조정 주기
-#define _INTERVAL_SERIAL 25 // 시리얼 출력 주기
+#define _INTERVAL_DIST 20 // 거리 측정 주기
+#define _INTERVAL_SERVO 20 // 서보 조정 주기
+#define _INTERVAL_SERIAL 100 // 시리얼 출력 주기
 
 #define _DIST_TARGET 255  // 공 목표위치
 #define _DIST_MIN 100 // 공 최소 위치 
 #define _DIST_MAX 410 // 공 최대 위치
 
-#define _SERVO_SPEED 160        // servo 속도 설정
+#define _SERVO_SPEED 30        // servo 속도 설정
 
 #define _KP 1  // P Control 민감도
 #define _KD 0  // D Control 민감도
